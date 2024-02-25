@@ -8,6 +8,10 @@ public class LevelManager : MonoBehaviour
     public GameObject[] Future_GO;
     public static bool isRetro = true;
 
+    private void Start()
+    {
+        isRetro = true;
+    }
     public void ShiftEnvironment(Component component, object data)
     {
         if (data is Vector3)

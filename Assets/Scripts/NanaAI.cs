@@ -25,7 +25,11 @@ public class NanaAI : MonoBehaviour
         {
             GameManager.gameFailed = true;
             //   LevelFailed_Event.OnEventRaised(this, true);
-        } 
+        }
+        if (collision.gameObject.tag == "Enemy")
+        {
+            GameManager.gameFailed = true;
+        }
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {

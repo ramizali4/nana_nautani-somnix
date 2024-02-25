@@ -33,6 +33,6 @@ public class GameManager : MonoBehaviour
     public void Retry()
     {
         GameManager.gameFailed = false;
-        SceneManager.LoadScene(SceneManager.sceneCountInBuildSettings - 1);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }
